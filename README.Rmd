@@ -12,7 +12,7 @@ output: github_document
 
 ## 網站資料爬取
 ```{r}
-install.packages("rvest")
+#install.packages("rvest")
 library(rvest)
 PTT<-read_html("https://www.ptt.cc/bbs/Tech_Job/index.html")
 btnURL<-PTT  %>% html_nodes("a[class ='btn wide']") %>% html_attr("href")
